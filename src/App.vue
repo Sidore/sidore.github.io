@@ -25,6 +25,15 @@ export default {
 }
 </script>
 <style lang="scss">
+body {
+    margin: 0;
+    padding: 0;
+}
+#header {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
 p {
     color: white;
     background: #ccc;
