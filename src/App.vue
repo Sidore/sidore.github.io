@@ -9,6 +9,9 @@ export default {
       return {
           message : "hello vue"
       }
+  },
+  created() {
+      console.log("started")
   }
 }
 </script>
