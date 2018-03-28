@@ -1,6 +1,7 @@
 <template lang="pug">
   div
-    p(v-model="message")
+    p {{message}}
+    input(v-model="message")
 </template>
 <script>
 export default {
@@ -11,4 +12,13 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+p {
+    color: white;
+    background: #ccc;
+    padding: 15px;
+    margin: 15px;
+}
+</style>
+
 
