@@ -9,7 +9,7 @@
                 p JavaScript developer
                 hr
                 p Art of coding
-    div#mainContent.fluid
+    div#content.fluid
         div.navigation
             p.content Visual SV
             ul.content.list
@@ -18,7 +18,17 @@
                 li 
                     a(href="#") portfolio
                 li
-                    a(href="#") expirience                
+                    a(href="#") expirience
+                li
+                    a(href="#") contact 
+    div#mainContent.fluid
+        div.container
+            div.horizontal
+                div.vertical
+                    h3 Career Objective
+                    hr 
+                    p I am a highly-focused software developer with five+ years’ experience in a variety of development and engineering positions, enthusiastic, knowledge-hungry learner, eager to meet challenges and quickly assimilate new concepts
+                div.vertical.bg             
     div#preFooter.fluid
         p map
     div#footer.fluid
@@ -59,16 +69,18 @@ h1 {
     background: #ccc url('../static/img/moving-through-stars-in-space_-1zccenlb__F0000.png') center center;
     background-size: cover;
     justify-content: center;
+
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        // width: 1000px;
+        // margin: auto;
+        // background: #ccc;
+    }
 }
-.container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    // width: 1000px;
-    // margin: auto;
-    // background: #ccc;
-}
+
 .fluid {
     width: 100%;
 }
@@ -78,7 +90,14 @@ p {
     padding: 15px;
     margin: 0;
 }
-
+.horizontal {
+    flex-direction: row;
+    display: flex;
+}
+.vertical {
+    flex-direction: column;
+    display: flex;    
+}
 .mailLogo {
     color: #eee;
     font-size: 20vh;
@@ -127,7 +146,7 @@ p {
     }
 }
 
-#mainContent {
+#content {
     background: #fefefe;
     display: flex;
     justify-content: center;
@@ -135,7 +154,7 @@ p {
     .navigation {
         max-width: 800px;
         display: flex;
-        padding: 20px;        
+        padding: 20px 20px 40px;        
         justify-content: space-between;
         width: 100%;
 
@@ -155,6 +174,10 @@ p {
                 align-items: center;
                 list-style: none;
 
+                li {
+                    display: flex;
+                }
+
                 a {
                     display: flex;
                     text-decoration: none;
@@ -165,6 +188,61 @@ p {
                     }
                 }
             }
+        }
+    }
+}
+
+#mainContent {
+    display: flex;
+    color: #ddd;
+    justify-content: center;
+    
+    .container {
+        max-width: 800px;
+        display: flex;
+        padding: 20px;        
+        justify-content: space-between;
+        width: 100%;
+        color: #051120;
+        font-size: 22px;
+        font-family: 'Ubuntu', sans-serif;
+
+        .vertical {
+            flex: 1;
+        }
+
+        .bg {
+            background: url('../static/img/apple-devices-1867761_1280-764x512.jpg') center;
+            background-size: cover;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        hr {
+            width: 75%;
+            border: none;
+            height: 2px;
+            background:#051120;  
+            margin: 0 0 20px 20px;
+            
+        }
+
+        h3,p {
+            padding: 0 20px 20px;
+            margin: 0;
+            
+        }
+
+        p {
+            background: transparent;
+            color: #051120;   
+            padding-bottom: 0;  
+        }
+        
+        .logo {
+            width: 100%;
         }
     }
 }
