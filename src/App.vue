@@ -28,7 +28,25 @@
                     h3 Career Objective
                     hr 
                     p I am a highly-focused software developer with five+ years’ experience in a variety of development and engineering positions, enthusiastic, knowledge-hungry learner, eager to meet challenges and quickly assimilate new concepts
-                div.vertical.bg             
+                div.vertical.bg
+    div#tech.fluid
+        div.container
+            h3.wb Skills
+            div.grid
+                div JavaScript
+                div Vue
+                div Vuex
+                div Angular.js
+                div Webpack
+                div Node.js
+                div Express
+                div TypeScript
+                div Sass\Less
+                div Pug
+                div jQuery
+                
+
+                 
     div#preFooter.fluid
         p map
     div#footer.fluid
@@ -66,7 +84,7 @@ h1 {
     text-align: center;
     display: flex;
     height: 100vh;
-    background: #ccc url('../static/img/moving-through-stars-in-space_-1zccenlb__F0000.png') center center;
+    background: #ddd url('../static/img/moving-through-stars-in-space_-1zccenlb__F0000.png') center center;
     background-size: cover;
     justify-content: center;
 
@@ -154,7 +172,7 @@ p {
     .navigation {
         max-width: 800px;
         display: flex;
-        padding: 20px 20px 40px;        
+        padding: 40px 20px 40px;        
         justify-content: space-between;
         width: 100%;
 
@@ -243,6 +261,38 @@ p {
         
         .logo {
             width: 100%;
+        }
+    }
+}
+
+#tech {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    height: 100vh;
+    background: #ccc url('../static/img/cropped-pexels-photo-373076-6.jpeg') center center;
+    background-size: cover;
+    justify-content: center;
+
+    .container {
+        max-width: 800px;
+        display: flex;
+        padding: 20px;        
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        color: #051120;
+        font-size: 22px;
+        font-family: 'Ubuntu', sans-serif;
+
+        h3 {
+            font-size: 30px;
+        }
+
+        .wb {
+            padding: 20px;
+            background: rgba($color: #fefefe, $alpha: 0.8)
         }
     }
 }
