@@ -33,20 +33,25 @@
         div.container
             h3.wb Skills
             div.grid
-                div JavaScript
-                div Vue
-                div Vuex
-                div Angular.js
-                div Webpack
-                div Node.js
-                div Express
-                div TypeScript
-                div Sass\Less
-                div Pug
-                div jQuery
-                
+                div.card.horizontal 
+                    h4 JavaScript
+                    p ES5, ES6, ES7+, TypeScript
+                div.card.horizontal
+                    h4 Vue
+                    p Vue-router, Vuex, Vuetify
+                div.card.horizontal
+                    h4 Angular.js
+                    p 1.5, 1.6, 2, 4, 5, Angular-Material 
+                div.card.horizontal
+                    h4 Webpack
+                    p 2, 3
+                div.card.horizontal 
+                    h4 Node.js
+                    p Express, WebSockets
+                div.card.horizontal
+                    h4 Tools
+                    p Sass\Less, Pug, Jquery
 
-                 
     div#preFooter.fluid
         p map
     div#footer.fluid
@@ -293,6 +298,24 @@ p {
         .wb {
             padding: 20px;
             background: rgba($color: #fefefe, $alpha: 0.8)
+        }
+
+        .grid {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .card {
+                @extend .wb;
+
+                .logo {
+                    width: 100%;
+                }
+            }
+
+            .card > * {
+                flex: 1;
+            }
         }
     }
 }
