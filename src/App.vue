@@ -10,10 +10,15 @@
                 hr
                 p Art of coding
     div#mainContent.fluid
-        div
-            p I'm a hardcore developer
-        div
-            p  lorem ipsum dolar
+        div.navigation
+            p.content Visual SV
+            ul.content.list
+                li 
+                    a(href="#") technologies
+                li 
+                    a(href="#") portfolio
+                li
+                    a(href="#") expirience                
     div#preFooter.fluid
         p map
     div#footer.fluid
@@ -71,7 +76,7 @@ p {
     color: white;
     background: #ccc;
     padding: 15px;
-    margin: 15px;
+    margin: 0;
 }
 
 .mailLogo {
@@ -122,6 +127,47 @@ p {
     }
 }
 
+#mainContent {
+    background: #fefefe;
+    display: flex;
+    justify-content: center;
+
+    .navigation {
+        max-width: 800px;
+        display: flex;
+        padding: 20px;        
+        justify-content: space-between;
+        width: 100%;
+
+        .content {
+            display: flex;
+            font-family: 'Ubuntu', sans-serif;
+            background: transparent;
+            color: #051120;
+            font-size: 36px;
+
+            &.list {
+                margin: 0;
+                padding: 0;
+                color: #051120;
+                font-size: 22px;
+                display: flex;
+                align-items: center;
+                list-style: none;
+
+                a {
+                    display: flex;
+                    text-decoration: none;
+                    padding: 20px;
+
+                    &:visited, &:active {
+                        color: #051120;
+                    }
+                }
+            }
+        }
+    }
+}
 
 </style>
 
