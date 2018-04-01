@@ -5,9 +5,10 @@
             h1.mailLogo 
                 span.logo S
                 span idore
-            div
+            div.mainSlogan
                 p JavaScript developer
-                p Art of code
+                hr
+                p Art of coding
     div#mainContent.fluid
         div
             p I'm a hardcore developer
@@ -32,6 +33,7 @@ export default {
 </script>
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 body {
     margin: 0;
@@ -57,6 +59,7 @@ h1 {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-evenly;
     // width: 1000px;
     // margin: auto;
     // background: #ccc;
@@ -95,6 +98,28 @@ p {
             z-index: 1;
         }
 
+}
+
+.mainSlogan {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    align-items: center;
+
+    p {
+        background: transparent;
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+    }
+
+    hr {
+        width: 20vw;
+        margin: 20px 0;
+        height: 2px;
+        border: none;
+        background: #eee;
+    }
 }
 
 
