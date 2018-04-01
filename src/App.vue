@@ -5,6 +5,9 @@
             h1.mailLogo 
                 span.logo S
                 span idore
+            div
+                p JavaScript developer
+                p Art of code
     div#mainContent.fluid
         div
             p I'm a hardcore developer
@@ -53,6 +56,7 @@ h1 {
 .container {
     display: flex;
     align-items: center;
+    flex-direction: column;
     // width: 1000px;
     // margin: auto;
     // background: #ccc;
@@ -72,20 +76,24 @@ p {
     font-size: 20vh;
     font-family: 'Dancing Script', cursive;
     z-index: 10;
-    .logo {
+    position: relative;
+
+    span {
         position: relative;
-        &::after {
-            height: 22vh;
-            width: 22vh;
+        z-index: 11;    
+    }
+    &::after {
+            height: 27vh;
+            width: 27vh;
             content: '';
             border: 1px #eee solid;
+            background: rgba(238, 238, 238, .1);
             transform: rotate(45deg);
             position: absolute;
-            top: 5px;
-            left: -12px;
+            top: 0vh;
+            left: -2vh;
             z-index: 1;
         }
-    }
 
 }
 
