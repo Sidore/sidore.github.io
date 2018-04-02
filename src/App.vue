@@ -293,6 +293,7 @@ p {
 
         h3 {
             font-size: 30px;
+            margin: 10px;
         }
 
         .wb {
@@ -306,15 +307,25 @@ p {
             width: 100%;
 
             .card {
-                @extend .wb;
-
+                padding: 10px;
+                background: rgba($color: #fefefe, $alpha: 0.8);
                 .logo {
                     width: 100%;
                 }
             }
 
-            .card > * {
+            h4 {
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .card > *:nth-child(1) {
                 flex: 1;
+            }    
+            .card > * {
+                flex: 2;
             }
         }
     }
