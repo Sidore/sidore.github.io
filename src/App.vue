@@ -318,7 +318,7 @@ p {
     margin-top: 50px;
     text-align: center;
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     background: #ccc url('../static/img/cropped-pexels-photo-373076-6.jpeg') center center;
     background-size: cover;
     justify-content: center;
