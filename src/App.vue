@@ -14,13 +14,13 @@
             p.content Visual SV
             ul.content.list
                 li 
-                    a(href="#") technologies
+                    a(href="#") skills
                 li 
                     a(href="#") portfolio
                 li
                     a(href="#") expirience
                 li
-                    a(href="#") contact 
+                    a(href="#") contacts 
     div#mainContent.fluid
         div.container
             div.horizontal
@@ -41,16 +41,16 @@
                     p Vue-router, Vuex, Vuetify
                 div.card.horizontal
                     h4 Angular.js
-                    p 1.5, 1.6, 2, 4, 5, Angular-Material 
+                    p 1.x, 2+, Angular-Material 
                 div.card.horizontal
                     h4 Webpack
-                    p 2, 3
+                    p Versions 2, 3, 4
                 div.card.horizontal 
                     h4 Node.js
                     p Express, WebSockets
                 div.card.horizontal
                     h4 Tools
-                    p Sass\Less, Pug, Jquery
+                    p Sass, Less, PostCSS, Pug, Jquery
 
     div#preFooter.fluid
         p map
@@ -205,6 +205,7 @@ p {
                     display: flex;
                     text-decoration: none;
                     padding: 20px;
+                    color: #051120;
 
                     &:visited, &:active {
                         color: #051120;
@@ -284,7 +285,7 @@ p {
         max-width: 800px;
         display: flex;
         padding: 20px;        
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: column;
         width: 100%;
         color: #051120;
@@ -293,7 +294,7 @@ p {
 
         h3 {
             font-size: 30px;
-            margin: 10px;
+            margin: 10px 0;
         }
 
         .wb {
@@ -319,6 +320,11 @@ p {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+            }
+
+            p {
+                background: #eee;
+                color: #05112080;
             }
 
             .card > *:nth-child(1) {
