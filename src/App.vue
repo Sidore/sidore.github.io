@@ -75,7 +75,7 @@
             div.vertical.card
                 div.photo
                 div.vertical
-                    p Feel free to contacts me via Linkedin
+                    p Feel free to contact me via LinkedIn
             hr
             p sidorenkovladyslav@gmail.com
     div#footer.fluid
@@ -363,6 +363,7 @@ p {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                padding-right: 10px;
             }
 
             p {
@@ -512,6 +513,7 @@ p {
     }
 
 }
+
 
 </style>
 
