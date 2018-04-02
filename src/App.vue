@@ -14,13 +14,13 @@
             p.content Visual SV
             ul.content.list
                 li 
-                    a(href="#") skills
-                li 
-                    a(href="#") portfolio
+                    a(href="#" v-scroll-to="'#tech'") skills
+                //- li 
+                //-     a(href="#" v-scroll-to="'#portfolio'") portfolio
+                //- li
+                //-     a(href="#" v-scroll-to="'#expirience'") expirience
                 li
-                    a(href="#") expirience
-                li
-                    a(href="#") contacts 
+                    a(href="#" v-scroll-to="'#footer'") contacts 
     div#mainContent.fluid
         div.container
             div.horizontal
@@ -48,20 +48,62 @@
                 div.card.horizontal 
                     h4 Node.js
                     p Express, WebSockets
+                div.card.horizontal 
+                    h4 Git
+                    p Git Submodules, SVN
                 div.card.horizontal
                     h4 Tools
                     p Sass, Less, PostCSS, Pug, Jquery
 
-    div#preFooter.fluid
-        p map
+    //- div#portfolio.fluid
+    //-     div.container.vertical
+    //-         div.horizontal
+    //-             a(href="https://itea.ua/" target="_blank").itemPortfolio.itea
+    //-             a(href="#" target="_blank").itemPortfolio b
+    //-             a(href="#" target="_blank").itemPortfolio c
+    //-         div.horizontal
+    //-             a(href="#" target="_blank").itemPortfolio d
+    //-             a(href="#" target="_blank").itemPortfolio e
+    //-             a(href="#" target="_blank").itemPortfolio f
+
+    //- div#expirience.fluid
+    //-     p expirience
+    div#contacts.fluid
+        div.container.vertical
+            h3 Сontacts
+            hr
+            div.vertical.card
+                div.photo
+                div.vertical
+                    p Feel free to contacts me via Linkedin
+            hr
+            p sidorenkovladyslav@gmail.com
     div#footer.fluid
-        p contacts
+        div.container.vertical
+            p 2012 - 2018 © Vladyslav Sydorenko
+            p.horizontal 
+                a(href="https://www.linkedin.com/in/vladyslav-sydorenko-689b9610b/")
+                    img(:src="linkedin")                    
+                a(href="https://github.com/Sidore")
+                    img(:src="git")
+                a(href="https://www.npmjs.com/~sidore") 
+                    img(:src="npm")
+                    
+                    
+
 </template>
 <script>
+import git from "../static/img/github.svg";
+import npm from "../static/img/npm.svg";
+import linkedin from "../static/img/linkedin.svg";
+
 export default {
   data(){
       return {
-          message : "hello vue"
+          message : "hello vue",
+          git,
+          npm,
+          linkedin
       }
   },
   created() {
@@ -306,6 +348,7 @@ p {
             display: flex;
             flex-direction: column;
             width: 100%;
+            margin-bottom: 20px;
 
             .card {
                 padding: 10px;
@@ -324,7 +367,7 @@ p {
 
             p {
                 background: #eee;
-                color: #05112080;
+                color: #051120c2;
             }
 
             .card > *:nth-child(1) {
@@ -335,6 +378,139 @@ p {
             }
         }
     }
+}
+
+// #portfolio {
+//     justify-content: center;
+//     display: flex;
+
+//     .container {
+//         max-width: 800px;
+//         display: flex;
+//         padding: 20px;
+//         margin-top: 10px;        
+//         justify-content: space-around;
+//         flex-direction: column;
+//         width: 100%;
+//         color: #051120;
+//         font-size: 22px;
+//         font-family: 'Ubuntu', sans-serif;
+
+//         .itemPortfolio {
+//             display: flex;
+//             flex: 1;
+//             height: 20vh;
+//             background: #ccc;
+//             margin: 20px 20px 20px 0;
+//             transition: all .5s;
+
+//             &.itea {
+//                 background: #ccc url('../static/img/itea.jpg') center center;
+//                 background-size: cover;
+//             }
+
+//             &:nth-child(3) {
+//                 margin-right: 0;
+//             }
+
+//             &:hover {
+//                 //  background: url('../static/img/itea.jpg'), url('../static/img/view.png') ;   
+//             }
+//         }
+//     }
+// }
+
+#contacts {
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    display: flex;
+    // height: 60vh;
+    // background: #cecece;
+    justify-content: center;
+    color: #051120;
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+
+    h3 {
+        margin: 0;
+        font-size: 30px;
+    }
+
+    .container {
+        align-items: center;
+        width: 800px;
+
+        p {
+            background: #eee;
+            color: #051120c2;
+        }
+
+        .photo {
+            display: flex;
+            background: url('../static/img/12140075_600004393475928_3624210431481713254_o.jpg') center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+    }
+
+
+    hr {
+        width: 50%;
+        border: none;
+        height: 2px;
+        background:#051120;  
+        margin: 20px 0;        
+    }
+}
+
+#footer {
+    background: #051120;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    // color: #051120;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+
+    p {
+        background: transparent;
+    }
+
+    img {
+        width: 40px;
+        display: flex;
+        height: 40px;
+        fill: white;
+        padding: 7px;
+    }
+
+    a {
+        display: flex;
+        color: white;
+        margin: auto;
+        border-radius: 70px;
+        max-height: 55px;
+        height: 55px;
+        width: 55px;
+        max-width: 55px;
+        background: #ccc;
+        text-decoration: none;
+        transition: all .5s;
+
+        &:hover {
+            background: white;
+        }
+    }
+
+    .horizontal {
+        justify-content: space-around;
+    }
+
 }
 
 </style>
