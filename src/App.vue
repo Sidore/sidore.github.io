@@ -17,8 +17,8 @@
                     a(href="#" v-scroll-to="'#tech'") skills
                 //- li 
                 //-     a(href="#" v-scroll-to="'#portfolio'") portfolio
-                //- li
-                //-     a(href="#" v-scroll-to="'#expirience'") expirience
+                li
+                    a(href="#" v-scroll-to="'#expirience'") expirience
                 li
                     a(href="#" v-scroll-to="'#footer'") contacts 
     div#mainContent.fluid
@@ -66,8 +66,8 @@
     //-             a(href="#" target="_blank").itemPortfolio e
     //-             a(href="#" target="_blank").itemPortfolio f
 
-    //- div#expirience.fluid
-    //-     p expirience
+    div#expirience.fluid
+        p expirience
     div#contacts.fluid
         div.container.vertical
             h3 Сontacts
