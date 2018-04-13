@@ -67,7 +67,38 @@
     //-             a(href="#" target="_blank").itemPortfolio f
 
     div#expirience.fluid
-        p expirience
+        div.container.vertical
+            h3 Experience
+            div.horizontal.step
+                div.vertical.text
+                    h3.company Lucky Labs
+                    hr
+                    div.vertical
+                        div
+                            h4 Team Lead Front-End - 02.04.18 - till now
+                        div
+                            h4 Senior JavaScript Developer - 01.09.17 - 02.04.18
+                        div
+                            h4 JavaScript Game Developer - 27.02.17 - 01.09.17
+                div.vertical.bg.ll    
+            div.horizontal.step
+                div.vertical.text 
+                    h3.company IT Education Academy
+                    hr
+                    div.vertical
+                        div 
+                            h4 Microsoft Sertified Instructor
+                        div
+                            h4 Fullstack Developer
+                div.vertical.bg.itea
+            div.horizontal.step
+                div.vertical.text 
+                    h3.company GNS
+                    hr
+                    div.vertical
+                        div
+                            h4 Front-End Developer
+                div.vertical.bg.gns
     div#contacts.fluid
         div.container.vertical
             h3 Сontacts
@@ -420,6 +451,81 @@ p {
 //         }
 //     }
 // }
+
+#expirience {
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    display: flex;
+    // height: 60vh;
+    // background: #cecece;
+    justify-content: center;
+    color: #051120;
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+
+    .container {
+        // align-items: center;
+        width: 800px;
+
+        .step {
+            margin: 20px 0;
+            background: #f8f8f8;
+
+            .text {
+                padding: 20px 0;
+            }
+        }
+
+        .vertical {
+            flex: 1;
+            
+        }
+
+        .bg {
+            background-size: cover;
+            background-position: right center;
+
+            &.ll {
+                background-image: url('../static/img/charismatic-leadership.jpg');                 
+            }
+
+            &.itea {
+                background-image: url('../static/img/martin-shreder-349256-opt.jpg');                 
+            }
+
+            &.gns {
+                background-image: url('../static/img/fullStack.jpg');                 
+            }
+
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        hr {
+            width: 75%;
+            border: none;
+            height: 2px;
+            background:#051120;  
+            margin: 0 0 20px 20px;
+            
+        }
+
+        .company,h4,p {
+            padding: 0 20px 20px;
+            margin: 0;
+            text-align: left;
+        }
+
+        p {
+            background: transparent;
+            color: #051120;   
+            padding-bottom: 0;  
+        }
+    }
+}
 
 #contacts {
     width: 100%;
