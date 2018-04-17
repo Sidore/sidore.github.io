@@ -75,11 +75,17 @@
                     hr
                     div.vertical
                         div
-                            h4 Team Lead Front-End - 02.04.18 - till now
+                            h4 Team Lead Front-End
+                            p.time 04.18 - till now
+                            p Leading a crew of 4 developers, task estimating, code review
                         div
-                            h4 Senior JavaScript Developer - 01.09.17 - 02.04.18
+                            h4 Senior JavaScript Developer
+                            p.time 09.17 - 04.18
+                            p Developing products and sites for company, using Vue.js, Scss, BEM, Webpack, Gulp
                         div
-                            h4 JavaScript Game Developer - 27.02.17 - 01.09.17
+                            h4 JavaScript Game Developer
+                            p.time 02.17 - 09.17
+                            p Developing games with HTML5, using JavaScript, Pixi.js, Webpack and own tools
                 div.vertical.bg.ll    
             div.horizontal.step
                 div.vertical.text 
@@ -88,6 +94,8 @@
                     div.vertical
                         div 
                             h4 Microsoft Sertified Instructor
+                            p.time 07.14 - 02.17
+                            p Developing CRM system, teaching Microsoft certified courses, teaching own-authored courses
                         div
                             h4 Fullstack Developer
                 div.vertical.bg.itea
