@@ -15,10 +15,10 @@
             ul.content.list
                 li 
                     a(href="#" v-scroll-to="'#tech'") skills
-                //- li 
-                //-     a(href="#" v-scroll-to="'#portfolio'") portfolio
                 li
                     a(href="#" v-scroll-to="'#expirience'") expirience
+                li 
+                    a(href="#" v-scroll-to="'#goals'") goals
                 li
                     a(href="#" v-scroll-to="'#footer'") contacts 
     div#mainContent.fluid
@@ -54,18 +54,6 @@
                 div.card.horizontal
                     h4 Tools
                     p Sass, Less, PostCSS, Pug, jQuery
-
-    //- div#portfolio.fluid
-    //-     div.container.vertical
-    //-         div.horizontal
-    //-             a(href="https://itea.ua/" target="_blank").itemPortfolio.itea
-    //-             a(href="#" target="_blank").itemPortfolio b
-    //-             a(href="#" target="_blank").itemPortfolio c
-    //-         div.horizontal
-    //-             a(href="#" target="_blank").itemPortfolio d
-    //-             a(href="#" target="_blank").itemPortfolio e
-    //-             a(href="#" target="_blank").itemPortfolio f
-
     div#expirience.fluid
         div.container.vertical
             h3.db Experience
@@ -111,6 +99,9 @@
                             p.time 07.14 - 09.15
                             p Developing websites, using WordPress, jQuery, Bootstrap
                 div.vertical.bg.gns
+    div#goals.fluid
+        div.container.vertical
+            h3.wb On my way to perfection
     div#contacts.fluid
         div.container.vertical
             h3 Сontacts
@@ -174,7 +165,7 @@ h1 {
     text-align: center;
     display: flex;
     height: 100vh;
-    background: #ddd url('../static/img/moving-through-stars-in-space_-1zccenlb__F0000.png') center center;
+    background: #ddd url('../static/img/moving-through-stars-in-space_-1zccenlb__F0000.jpg') center center;
     background-size: cover;
     justify-content: center;
 
@@ -424,46 +415,6 @@ p {
     }
 }
 
-// #portfolio {
-//     justify-content: center;
-//     display: flex;
-
-//     .container {
-//         max-width: 800px;
-//         display: flex;
-//         padding: 20px;
-//         margin-top: 10px;        
-//         justify-content: space-around;
-//         flex-direction: column;
-//         width: 100%;
-//         color: #051120;
-//         font-size: 22px;
-//         font-family: 'Ubuntu', sans-serif;
-
-//         .itemPortfolio {
-//             display: flex;
-//             flex: 1;
-//             height: 20vh;
-//             background: #ccc;
-//             margin: 20px 20px 20px 0;
-//             transition: all .5s;
-
-//             &.itea {
-//                 background: #ccc url('../static/img/itea.jpg') center center;
-//                 background-size: cover;
-//             }
-
-//             &:nth-child(3) {
-//                 margin-right: 0;
-//             }
-
-//             &:hover {
-//                 //  background: url('../static/img/itea.jpg'), url('../static/img/view.png') ;   
-//             }
-//         }
-//     }
-// }
-
 #expirience {
     width: 100%;
     padding: 40px 0;
@@ -562,6 +513,74 @@ p {
             background: transparent;
             color: #051120;   
             padding-bottom: 0;  
+        }
+    }
+}
+
+#goals {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    background: #ccc url('../static/img/open_notebook-min.jpg') center center;
+    background-size: cover;
+    justify-content: center;
+
+    .container {
+        max-width: 800px;
+        display: flex;
+        padding: 20px;        
+        justify-content: space-around;
+        flex-direction: column;
+        width: 100%;
+        color: #051120;
+        font-size: 22px;
+        font-family: 'Ubuntu', sans-serif;
+
+        h3 {
+            font-size: 30px;
+            margin: 10px 0;
+        }
+
+        .wb {
+            padding: 20px;
+            background: rgba($color: #fefefe, $alpha: 0.8)
+        }
+
+        .grid {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 20px;
+
+            .card {
+                padding: 10px;
+                background: rgba($color: #fefefe, $alpha: 0.8);
+                .logo {
+                    width: 100%;
+                }
+            }
+
+            h4 {
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-right: 10px;
+            }
+
+            p {
+                background: #eee;
+                color: #051120c2;
+            }
+
+            .card > *:nth-child(1) {
+                flex: 1;
+            }    
+            .card > * {
+                flex: 2;
+            }
         }
     }
 }
