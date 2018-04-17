@@ -68,7 +68,7 @@
 
     div#expirience.fluid
         div.container.vertical
-            h3 Experience
+            h3.db Experience
             div.horizontal.step
                 div.vertical.text
                     h3.company Lucky Labs
@@ -480,6 +480,12 @@ p {
         .vertical {
             flex: 1;
             
+        }
+    
+        .db {
+            background: #f8f8f8;
+            margin: 0 0 20px;
+            padding: 20px 0;            
         }
 
         .bg {
