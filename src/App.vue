@@ -95,9 +95,11 @@
                         div 
                             h4 Microsoft Sertified Instructor
                             p.time 07.14 - 02.17
-                            p Developing CRM system, teaching Microsoft certified courses, teaching own-authored courses
+                            p Teaching Microsoft certified courses, teaching own-authored courses
                         div
                             h4 Fullstack Developer
+                            p.time 07.14 - 02.17
+                            p Developing CRM system, using ASP.NET MVC 5, ASP.NET Web Api 2, Angular.js
                 div.vertical.bg.itea
             div.horizontal.step
                 div.vertical.text 
@@ -106,6 +108,8 @@
                     div.vertical
                         div
                             h4 Front-End Developer
+                            p.time 07.14 - 09.15
+                            p Developing websites, using WordPress
                 div.vertical.bg.gns
     div#contacts.fluid
         div.container.vertical
