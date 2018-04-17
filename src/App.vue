@@ -53,7 +53,7 @@
                     p Git Submodules, SVN
                 div.card.horizontal
                     h4 Tools
-                    p Sass, Less, PostCSS, Pug, Jquery
+                    p Sass, Less, PostCSS, Pug, jQuery
 
     //- div#portfolio.fluid
     //-     div.container.vertical
@@ -74,15 +74,15 @@
                     h3.company Lucky Labs
                     hr
                     div.vertical
-                        div
+                        div.position
                             h4 Team Lead Front-End
                             p.time 04.18 - till now
                             p Leading a crew of 4 developers, task estimating, code review
-                        div
+                        div.position
                             h4 Senior JavaScript Developer
                             p.time 09.17 - 04.18
                             p Developing products and sites for company, using Vue.js, Scss, BEM, Webpack, Gulp
-                        div
+                        div.position
                             h4 JavaScript Game Developer
                             p.time 02.17 - 09.17
                             p Developing games with HTML5, using JavaScript, Pixi.js, Webpack and own tools
@@ -92,11 +92,11 @@
                     h3.company IT Education Academy
                     hr
                     div.vertical
-                        div 
+                        div.position
                             h4 Microsoft Sertified Instructor
                             p.time 07.14 - 02.17
                             p Teaching Microsoft certified courses, teaching own-authored courses
-                        div
+                        div.position
                             h4 Fullstack Developer
                             p.time 07.14 - 02.17
                             p Developing CRM system, using ASP.NET MVC 5, ASP.NET Web Api 2, Angular.js
@@ -106,10 +106,10 @@
                     h3.company GNS
                     hr
                     div.vertical
-                        div
+                        div.position
                             h4 Front-End Developer
                             p.time 07.14 - 09.15
-                            p Developing websites, using WordPress
+                            p Developing websites, using WordPress, jQuery, Bootstrap
                 div.vertical.bg.gns
     div#contacts.fluid
         div.container.vertical
@@ -125,11 +125,11 @@
         div.container.vertical
             p 2012 - 2018 © Vladyslav Sydorenko
             p.horizontal 
-                a(href="https://www.linkedin.com/in/vladyslav-sydorenko-689b9610b/")
+                a(href="https://www.linkedin.com/in/vladyslav-sydorenko-689b9610b/" target="_blank")
                     img(:src="linkedin")                    
-                a(href="https://github.com/Sidore")
+                a(href="https://github.com/Sidore" target="_blank")
                     img(:src="git")
-                a(href="https://www.npmjs.com/~sidore") 
+                a(href="https://www.npmjs.com/~sidore" target="_blank") 
                     img(:src="npm")
                     
                     
@@ -502,18 +502,20 @@ p {
 
         .bg {
             background-size: cover;
-            background-position: right center;
+            background-position: center;
+            background-repeat: no-repeat;
 
             &.ll {
-                background-image: url('../static/img/charismatic-leadership.jpg');                 
+                background-image: url('../static/img/charismatic-leadership.jpg');
+                background-position: right center;                                  
             }
 
             &.itea {
-                background-image: url('../static/img/martin-shreder-349256-opt.jpg');                 
+                background-image: url('../static/img/oliur-rahman-01.jpg');                 
             }
 
             &.gns {
-                background-image: url('../static/img/fullStack.jpg');                 
+                background-image: url('../static/img/developer.jpg');                 
             }
 
         }
@@ -537,7 +539,26 @@ p {
             text-align: left;
         }
 
+        h4 {
+            padding-bottom: 0;
+        }
+
+        .position {
+            padding-bottom: 25px;
+
+            &:last-child {
+                padding-bottom: 0;                
+            }
+        }
+
         p {
+
+            &.time {
+                color: #051120c2;
+                font-size: 16px;
+                padding-bottom: 5px;     
+            }
+
             background: transparent;
             color: #051120;   
             padding-bottom: 0;  
