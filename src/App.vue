@@ -101,15 +101,13 @@
                 div.vertical.bg.gns
     div#goals.fluid
         div.container.vertical
-            h3.wb On my way to perfection
+            h3.wb Aim for the moon. If you miss, you may hit a star.
+            
     div#contacts.fluid
         div.container.vertical
             h3 Сontacts
             hr
-            div.vertical.card
-                div.photo
-                div.vertical
-                    p Feel free to contact me via LinkedIn
+            p Feel free to contact me via LinkedIn
             hr
             p sidorenkovladyslav@gmail.com
     div#footer.fluid
@@ -272,6 +270,7 @@ p {
                 display: flex;
                 align-items: center;
                 list-style: none;
+                flex-wrap: wrap;
 
                 li {
                     display: flex;
@@ -314,6 +313,10 @@ p {
         .bg {
             background: url('../static/img/apple-devices-1867761_1280-764x512.jpg') center;
             background-size: cover;
+
+            @media screen and (max-width: 500px) {
+                flex: none;
+            }
         }
 
         h3 {
@@ -326,6 +329,11 @@ p {
             height: 2px;
             background:#051120;  
             margin: 0 0 20px 20px;
+
+            @media screen and (max-width: 500px) {
+                margin: 0 0 20px;
+                width: 100%;
+            }
             
         }
 
@@ -456,6 +464,10 @@ p {
             background-position: center;
             background-repeat: no-repeat;
 
+             @media screen and (max-width: 500px) {
+                flex: none;
+            }
+
             &.ll {
                 background-image: url('../static/img/charismatic-leadership.jpg');
                 background-position: right center;                                  
@@ -481,6 +493,10 @@ p {
             height: 2px;
             background:#051120;  
             margin: 0 0 20px 20px;
+
+            @media screen and (max-width: 500px) {
+                width: 85%;
+            }
             
         }
 
@@ -488,6 +504,8 @@ p {
             padding: 0 20px 20px;
             margin: 0;
             text-align: left;
+
+            
         }
 
         h4 {
@@ -609,6 +627,12 @@ p {
         p {
             background: #eee;
             color: #051120c2;
+
+             @media screen and (max-width: 500px) {
+                width: 100%;
+                font-size: 16px;
+                box-sizing: border-box;
+            }
         }
 
         .photo {
