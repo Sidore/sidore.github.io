@@ -38,7 +38,7 @@
                     p ES5, ES6, ES7+, TypeScript
                 div.card.horizontal
                     h4 Vue
-                    p Vue-router, Vuex, Vuetify
+                    p Vue-router, Vuex, SSR
                 div.card.horizontal
                     h4 Angular.js
                     p 1.x, 2+, Angular-Material 
@@ -65,11 +65,11 @@
                         div.position
                             h4 Team Lead Front-End
                             p.time 04.18 - till now
-                            p Leading a crew of 4 developers, task estimating, code review
+                            p Leading a crew of 7 front-end developers, task estimating, code review, developing framework for SPA
                         div.position
                             h4 Senior JavaScript Developer
                             p.time 09.17 - 04.18
-                            p Developing products and sites for company, using Vue.js, Scss, BEM, Webpack, Gulp
+                            p Developing products and sites for the company, using Vue.js, Scss, BEM, Webpack, Gulp
                         div.position
                             h4 JavaScript Game Developer
                             p.time 02.17 - 09.17
@@ -101,13 +101,14 @@
                 div.vertical.bg.gns
     div#goals.fluid
         div.container.vertical
-            h3.wb Aim for the moon. If you miss, you may hit a star.
+            h3.wb Work hard. Dream big.
             
     div#contacts.fluid
         div.container.vertical
             h3 Сontacts
             hr
-            p Feel free to contact me via LinkedIn
+            p Feel free to contact me via 
+                a(href="https://www.linkedin.com/in/vladyslav-sydorenko-689b9610b/" target="_blank") LinkedIn
             hr
             p sidorenkovladyslav@gmail.com
     div#footer.fluid
@@ -129,6 +130,15 @@ import git from "../static/img/github.svg";
 import npm from "../static/img/npm.svg";
 import linkedin from "../static/img/linkedin.svg";
 
+import header from "@components/Header";
+import content from "@components/Content";
+import mainContent from "@components/MainContent";
+import tech from "@components/Tech";
+import expirience from "@components/Expirience";
+import goals from "@components/Goals";
+import contacts from "@components/Contacts";
+import footer from "@components/Footer";
+
 export default {
   data(){
       return {
@@ -140,6 +150,9 @@ export default {
   },
   created() {
       console.log("started")
+  },
+  components: {
+      header, content, mainContent, tech, expirience, goals, contacts, footer
   }
 }
 </script>
