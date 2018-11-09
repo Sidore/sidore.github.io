@@ -11,6 +11,7 @@ module.exports = {
         publicPath: "/",
         filename: "[name].js"
     },
+    mode: "production",
     resolve: {
         alias: {
             "@components" : path.resolve(__dirname, "src", "components")

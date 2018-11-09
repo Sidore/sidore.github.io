@@ -65,7 +65,7 @@
                         div.position
                             h4 Team Lead Front-End
                             p.time 04.18 - till now
-                            p Leading a crew of 7 front-end developers, task estimating, code review, developing framework for SPA
+                            p Leading a crew of 7 front-end developers, task estimating, code review, developing a SPA framework 
                         div.position
                             h4 Senior JavaScript Developer
                             p.time 09.17 - 04.18
@@ -608,6 +608,10 @@ p {
 
             .card > *:nth-child(1) {
                 flex: 1;
+
+                @media screen and (max-width: 500px) {
+                    flex: 2;
+                }
             }    
             .card > * {
                 flex: 2;
