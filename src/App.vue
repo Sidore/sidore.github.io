@@ -40,8 +40,8 @@
                     h4 Vue
                     p Vue-router, Vuex, SSR
                 div.card.horizontal
-                    h4 Angular.js
-                    p 1.x, 2+, Angular-Material 
+                    h4 React.js
+                    p Redux 
                 div.card.horizontal
                     h4 Webpack
                     p Versions 2, 3, 4
